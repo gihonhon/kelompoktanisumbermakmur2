@@ -214,7 +214,7 @@
   flex-direction: column;
   background-size: cover;
   justify-content: center;
-  background-image: url("asset/background_tani.jpg");
+  background-image: url("../background_tani.jpg");
 }
 .landing-text03 {
   color: var(--dl-color-gray-white);

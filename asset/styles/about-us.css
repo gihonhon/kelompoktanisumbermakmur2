@@ -210,7 +210,7 @@
   flex-direction: column;
   background-size: cover;
   justify-content: center;
-  background-image: url("asset/backgroundtani.jpg");
+  background-image: url("../backgroundtani.jpg");
   background-repeat: no-repeat;
   background-position: top;
 }
@@ -283,7 +283,7 @@
   align-items: flex-start;
   flex-direction: column;
   background-size: cover;
-  background-image: url('/styles/asset/out_sumber_makmur_harvest_cabai.jpg');
+  background-image: url('../out_sumber_makmur_harvest_cabai.jpg');
   background-position: center;
 }
 .about-us-container03:hover {
@@ -316,7 +316,7 @@
   align-items: flex-start;
   flex-direction: column;
   background-size: cover;
-  background-image: url('asset/background_tani.jpg');
+  background-image: url('../background_tani.jpg');
   background-position: center;
 }
 .about-us-container05:hover {
@@ -349,7 +349,7 @@
   align-items: flex-start;
   flex-direction: column;
   background-size: cover;
-  background-image: url('/styles/asset/out_sumber_makmur_field..jpg');
+  background-image: url('../out_sumber_makmur_field..jpg');
   background-position: center;
 }
 .about-us-container07:hover {
@@ -382,7 +382,7 @@
   align-items: flex-start;
   flex-direction: column;
   background-size: cover;
-  background-image: url('/styles/asset/out_sumber_makmur_field_3.jpg');
+  background-image: url('../out_sumber_makmur_field_3.jpg');
   background-position: center;
 }
 .about-us-container09:hover {
@@ -415,7 +415,7 @@
   align-items: flex-start;
   flex-direction: column;
   background-size: cover;
-  background-image: url('/styles/asset/sumber_makmur_field_2.jpg');
+  background-image: url('../sumber_makmur_field_2.jpg');
   background-position: bottom;
 }
 .about-us-container11:hover {
