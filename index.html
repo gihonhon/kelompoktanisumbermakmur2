@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--This is the head section-->
+    <!-- <style> ... </style> -->
+    <title>Kelompok Tani Sumber Makmur</title> <!-- Judul Tab browser -->
+    <!-- Meta Property for Browser configuration -->
+    <meta property="og:title" content="KelompokTaniSumberMakmur-HTML" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <!-- Style css for only this Page -->
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <style>
+      .mySlides {display: none}
+      img {vertical-align: middle;}
+      
+      /* Slideshow container */
+      .slideshow-container {
+        max-width: 1200px;
+        position: relative;
+        margin: auto;
+      }
+      
+      /* Next & previous buttons */
+      .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+      
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+      }
+      
+      /* Caption text */
+      .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+      }
+      
+      /* Number text (1/3 etc) */
+      .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+      
+      /* The dots/bullets/indicators */
+      .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+      
+      .active, .dot:hover {
+        background-color: #717171;
+      }
+      
+      /* Fading animation */
+      .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+      
+      @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+      }
+      
+      /* On smaller screens, decrease text size */
+      @media only screen and (max-width: 300px) {
+        .prev, .next,.text {font-size: 11px}
+      }
+      </style>
+      <!-- Installation Some Tool from CDN Link -->
+    <link
+      rel="shortcut icon"
+      href="public/playground_assets/logo-removebg-preview1.png"
+      type="icon/png"
+      sizes="32x32"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://www.dafont.com/aoutoory-dragon.font"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <!-- End of the head section -->
+
+  <!-- This is Body section -->
+  <body>
+    <div>
+      <link href="./styles/landing.css" rel="stylesheet" />
+      <div class="landing-container"> <!-- Wrapping Container for wrap all section in this Page -->
+        <!-- Navigation Bar/Nav bar -->
+        <header data-role="Header" class="landing-header"> 
+          <a href="index.html" class="landing-navlink">
+            <div class="landing-container01">
+              <img
+                alt="logo"
+                src="public/playground_assets/logo-removebg-preview-200w.png"
+                class="landing-image"
+              />
+              <span class="landing-text">Sumber Makmur</span>
+            </div>
+          </a>
+          <div class="landing-nav">
+            <nav class="landing-nav1">
+              <span class="landing-text01">Home</span>
+              <a href="./pages/about-us.html" class="landing-navlink1">About us</a>
+              <a href="./pages/harvets.html" class="landing-navlink2">Harvest</a>
+            </nav>
+          </div>
+          <div data-role="BurgerMenu" class="landing-burger-menu">
+            <svg viewBox="0 0 1024 1024" class="landing-icon">
+              <path
+                d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+              ></path>
+            </svg>
+          </div>
+          <div data-role="MobileMenu" class="landing-mobile-menu">
+            <div class="landing-nav2">
+              <div class="landing-container02">
+                <img
+                  alt="image"
+                  src="https://presentation-website-assets.teleporthq.io/logos/logo.png"
+                  class="landing-image01"
+                />
+                <div
+                  data-role="CloseMobileMenu"
+                  class="landing-close-mobile-menu"
+                >
+                  <svg viewBox="0 0 1024 1024" class="landing-icon02">
+                    <path
+                      d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <nav class="landing-nav3">
+                <span class="landing-text02">Home</span>
+                <a href="./pages/about-us.html" class="landing-navlink3">About us</a>
+                <a href="./pages/harvets.html" class="landing-navlink4">Harvest</a>
+              </nav>
+            </div>
+            <div>
+              <svg viewBox="0 0 950.8571428571428 1024" class="landing-icon04">
+                <path
+                  d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+                ></path></svg><svg viewBox="0 0 877.7142857142857 1024" class="landing-icon06">
+                <path
+                  d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
+                ></path></svg><svg viewBox="0 0 602.2582857142856 1024" class="landing-icon08">
+                <path
+                  d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </header>
+        <!-- End of Navigation Bar/Nav bar -->
+
+        <!-- Hero Section -->
+        <div class="landing-hero">
+          <span class="landing-text03">kelompok tani sumber makmur</span>
+          <h1 class="landing-text04">
+            <span>Freshly handpicked from</span>
+            <br />
+            <span>Farmers To You</span>
+          </h1>
+        </div>
+        <!-- End of Hero Section -->
+
+        <!-- About us section -->
+        <div class="landing-banner">
+          <h1 class="landing-text08">Tentang Kami</h1>
+          <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="/styles//asset/background_tani.jpg" style="width:100%">
+              <div class="text">@Sumber Makmur2</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="/styles//asset/out_bg_tani_2..jpg" style="width:100%">
+              <div class="text">@Sumber Makmur2</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="/styles//asset/out_bg_tani_3..jpg" style="width:100%">
+              <div class="text">@Sumber Makmur2</div>
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+          <!-- <iframe
+            src="https://www.youtube.com/embed/R0wzuJOK384"
+            allowfullscreen=""
+            class="landing-iframe"
+          ></iframe> -->
+          <span class="landing-text09">
+            Kami merupakan kelompok tani, yang bernamakan 'Kelompok Tani Sumber
+            Makmur 2 Karingau'. Terletak di Jala Sultan Hasanuddin RT.004
+            Karingau, Kec.Balikpapan Barat, Kota Balikpapan, Provinsi Kalimantan
+            Timur.
+          </span>
+          <a href="/pages/about-us.html" class="landing-button button">Read More</a>
+        </div>
+        <!-- End of about us section -->
+
+        <!-- Why us section -->
+        <div class="landing-features">
+          <h1 class="landing-text10">
+            <span>Mengapa Kami?</span>
+            <br />
+          </h1>
+          <span class="landing-text13">
+            <span>
+              Kami menyediakan bahan sayur untuk memasak yang pastinya segar dan
+              higenis untuk dimasak.
+            </span>
+            <br />
+          </span>
+          <div class="landing-container03">
+            <div class="landing-feature-card">
+              <img
+                alt="image"
+                src="public/playground_assets/box-seam%20%5B1%5D.svg"
+                class="landing-image02"
+              />
+              <h2 class="landing-text16">Pesan kapan saja</h2>
+              <span class="landing-text17">
+                Anda dapat memesan atau datang langsung ke lokasi untuk membeli
+                hasil panen kami
+              </span>
+            </div>
+            <div class="landing-feature-card01">
+              <img
+                alt="image"
+                src="public/playground_assets/heart-handshake.svg"
+                class="landing-image03"
+              />
+              <h2 class="landing-text18">Ramah lingkungan</h2>
+              <span class="landing-text19">
+                Bahan dan metode pengembangbiakan yang kami gunakan terjamin
+                aman dan ramah lingkungan
+              </span>
+            </div>
+            <div class="landing-feature-card02">
+              <img
+                alt="image"
+                src="public/playground_assets/leaf.svg"
+                class="landing-image04"
+              />
+              <h2 class="landing-text20">Hasil panen yang segar</h2>
+              <span class="landing-text21">
+                Hasil dari panen yang dipetik dijamin segar dan dipanen langsung
+                oleh kami
+              </span>
+            </div>
+            <div class="landing-feature-card03">
+              <img
+                alt="image"
+                src="public/playground_assets/coins.svg"
+                class="landing-image05"
+              />
+              <h2 class="landing-text22">Harga terjangkau</h2>
+              <span class="landing-text23">
+                Kami memberikan harga yang terjangkau untuk anda dan memberikan
+                banyak pilihan untuk pembayaran
+              </span>
+            </div>
+          </div>
+        </div>
+        <!-- End of why us section -->
+
+        <!-- Product section -->
+        <div class="landing-products">
+          <div class="landing-produk-kami">
+            <h1 class="landing-text24">Produk Kami</h1>
+          </div>
+          <div class="landing-gallery">
+            <div class="landing-container04">
+              <div class="landing-container05">
+                <div class="landing-container06">
+                  <div class="landing-gallery-card">
+                    <div class="landing-container07">
+                      <div class="landing-container08">
+                        <h2 class="landing-text25">Buncis</h2>
+                      </div>
+                    </div>
+                    <img
+                      alt="image"
+                      src="https://img.freepik.com/free-photo/fresh-raw-green-beans_181624-6071.jpg?w=1060&amp;t=st=1678690438~exp=1678691038~hmac=8f778d5e2506a87dfce738085eb8f2c3b7399f1a4078b6fcdbb10f9715a7b80f"
+                      class="landing-image06"
+                    />
+                  </div>
+                </div>
+                <div class="landing-container09">
+                  <div class="landing-gallery-card1">
+                    <div class="landing-container10">
+                      <div class="landing-container11">
+                        <h2 class="landing-text26">Ubi Ungu</h2>
+                      </div>
+                    </div>
+                    <img
+                      alt="image"
+                      src="https://img.freepik.com/free-photo/purple-sweet-potato_1205-764.jpg?1&amp;w=1060&amp;t=st=1678690869~exp=1678691469~hmac=807a8424e3edfb2ce6c6b1f9bcf2a9c212ddb29ac95a3ca8a9ab292b705457b5"
+                      class="landing-image07"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="landing-container12">
+                <div class="landing-gallery-card2">
+                  <div class="landing-container13">
+                    <div class="landing-container14">
+                      <h2 class="landing-text27">Cabai</h2>
+                    </div>
+                  </div>
+                  <img
+                    alt="https://img.freepik.com/free-photo/fresh-raw-green-beans_181624-6071.jpg?w=1060&amp;t=st=1678690438~exp=1678691038~hmac=8f778d5e2506a87dfce738085eb8f2c3b7399f1a4078b6fcdbb10f9715a7b80f"
+                    src="/styles/asset//product_cabai_2.jpg"
+                    class="landing-image08"
+                  />
+                </div>
+              </div>
+              <div class="landing-container15">
+                <div class="landing-gallery-card3">
+                  <div class="landing-container16">
+                    <div class="landing-container17">
+                      <h2 class="landing-text28">Cabai</h2>
+                    </div>
+                  </div>
+                  <img
+                    alt="https://img.freepik.com/free-photo/purple-sweet-potato_1205-764.jpg?1&amp;w=1060&amp;t=st=1678690869~exp=1678691469~hmac=807a8424e3edfb2ce6c6b1f9bcf2a9c212ddb29ac95a3ca8a9ab292b705457b5"
+                    src="/styles/asset//product_cabai_2.jpg"
+                    class="landing-image09"
+                  />
+                </div>
+              </div>
+              <div class="landing-container18">
+                <div class="landing-gallery-card4">
+                  <div class="landing-container19">
+                    <div class="landing-container20">
+                      <h2 class="landing-text29">Cabai</h2>
+                    </div>
+                  </div>
+                  <img
+                    alt="https://img.freepik.com/free-photo/purple-sweet-potato_1205-764.jpg?1&amp;w=1060&amp;t=st=1678690869~exp=1678691469~hmac=807a8424e3edfb2ce6c6b1f9bcf2a9c212ddb29ac95a3ca8a9ab292b705457b5"
+                    src="/styles/asset//product_cabai_2.jpg"
+                    class="landing-image10"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="landing-container21">
+              <div class="landing-gallery-card5">
+                <div class="landing-container22">
+                  <div class="landing-container23">
+                    <h2 class="landing-text30">Tomat</h2>
+                  </div>
+                </div>
+                <img
+                  alt="image"
+                  src="https://img.freepik.com/free-photo/top-view-ripe-fresh-tomatoes-with-water-drops-black-background_141793-3432.jpg?w=1060&amp;t=st=1678690921~exp=1678691521~hmac=1668cec8ab569a5beee0ca94825ab7426be7deeb52b0cec95e0ca514005cb75a"
+                  class="landing-image11"
+                />
+              </div>
+            </div>
+            <div class="landing-container24">
+              <div class="landing-gallery-card6">
+                <div class="landing-container25">
+                  <div class="landing-container26">
+                    <h2 class="landing-text31">Tomat</h2>
+                  </div>
+                </div>
+                <img
+                  alt="image"
+                  src="https://img.freepik.com/free-photo/purple-sweet-potato_1205-764.jpg?1&amp;w=1060&amp;t=st=1678690869~exp=1678691469~hmac=807a8424e3edfb2ce6c6b1f9bcf2a9c212ddb29ac95a3ca8a9ab292b705457b5"
+                  class="landing-image12"
+                />
+              </div>
+            </div>
+            <div class="landing-container27">
+              <div class="landing-gallery-card7">
+                <div class="landing-container28">
+                  <div class="landing-container29">
+                    <h2 class="landing-text32">Tomat</h2>
+                  </div>
+                </div>
+                <img
+                  alt="image"
+                  src="https://img.freepik.com/free-photo/chilli-pepper-dark-surface_1150-42083.jpg?w=1060&amp;t=st=1678690594~exp=1678691194~hmac=ea626b50d6eb1945db49452acd23b0fcef9c92c92c0c45b458af43e156eb6ddc"
+                  class="landing-image13"
+                />
+              </div>
+            </div>
+            <div class="landing-container30">
+              <div class="landing-gallery-card8">
+                <div class="landing-container31">
+                  <div class="landing-container32">
+                    <h2 class="landing-text33">Tomat</h2>
+                  </div>
+                </div>
+                <img
+                  alt="image"
+                  src="https://img.freepik.com/free-photo/top-view-ripe-fresh-tomatoes-with-water-drops-black-background_141793-3432.jpg?w=1060&amp;t=st=1678690921~exp=1678691521~hmac=1668cec8ab569a5beee0ca94825ab7426be7deeb52b0cec95e0ca514005cb75a"
+                  class="landing-image14"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End of product section -->
+
+
+        <!-- Hubungi Kami Section  -->
+        <div class="landing-hubungi-kami">
+          <div class="landing-container42">
+            <img
+              alt="image"
+              src="/styles/asset/contactus_callcenter.jpg"
+              class="landing-image18"
+            />
+          </div>
+          <div class="landing-container43">
+            <h1 class="landing-text41">Hubungi Kami</h1>
+            <span class="landing-text42">
+              Hubungi kami jika anda memiliki pertanyaan dan membutuhkan bantuan
+              dalam pemesanan
+            </span>
+            <a
+              href="https://wa.me/6285393491255"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="landing-link"
+            >
+              <div class="landing-container44 button">
+                <svg viewBox="0 0 1024 1024" class="landing-icon10">
+                  <path
+                    d="M873 148.8c-95.8-96-223.2-148.8-359-148.8-279.6 0-507.2 227.6-507.2 507.4 0 89.4 23.4 176.8 67.8 253.6l-72 263 269-70.6c74.2 40.4 157.6 61.8 242.4 61.8h0.2c0 0 0 0 0 0 279.6 0 507.4-227.6 507.4-507.4 0-135.6-52.8-263-148.6-359zM514.2 929.6v0c-75.8 0-150-20.4-214.8-58.8l-15.4-9.2-159.6 41.8 42.6-155.6-10-16c-42.4-67-64.6-144.6-64.6-224.4 0-232.6 189.2-421.8 422-421.8 112.6 0 218.6 44 298.2 123.6 79.6 79.8 123.4 185.6 123.4 298.4-0.2 232.8-189.4 422-421.8 422zM745.4 613.6c-12.6-6.4-75-37-86.6-41.2s-20-6.4-28.6 6.4c-8.4 12.6-32.8 41.2-40.2 49.8-7.4 8.4-14.8 9.6-27.4 3.2s-53.6-19.8-102-63c-37.6-33.6-63.2-75.2-70.6-87.8s-0.8-19.6 5.6-25.8c5.8-5.6 12.6-14.8 19-22.2s8.4-12.6 12.6-21.2c4.2-8.4 2.2-15.8-1-22.2s-28.6-68.8-39-94.2c-10.2-24.8-20.8-21.4-28.6-21.8-7.4-0.4-15.8-0.4-24.2-0.4s-22.2 3.2-33.8 15.8c-11.6 12.6-44.4 43.4-44.4 105.8s45.4 122.6 51.8 131.2c6.4 8.4 89.4 136.6 216.6 191.4 30.2 13 53.8 20.8 72.2 26.8 30.4 9.6 58 8.2 79.8 5 24.4-3.6 75-30.6 85.6-60.2s10.6-55 7.4-60.2c-3-5.6-11.4-8.8-24.2-15.2z"
+                  ></path>
+                </svg>
+                <span class="landing-text43">WhatsApp</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- End Of Hubungi Kami Section  -->
+
+        <!-- Social Media Section -->
+        <div class="landing-features1">
+          <h1 class="landing-text44">Social Media</h1>
+          <div class="landing-container45">
+            <div class="landing-feature-card04">
+              <a
+                href="https://www.instagram.com/sumbermakmur.garden/"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="landing-link1"
+              >
+                <img
+                  alt="image"
+                  src="public/playground_assets/icons8-instagram-240.svg"
+                  class="landing-image19"
+                />
+              </a>
+            </div>
+            <div class="landing-feature-card05">
+              <a
+                href="https://www.facebook.com/profile.php?id=100090434927415"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="landing-link2"
+              >
+                <img
+                  alt="image"
+                  src="public/playground_assets/icons8-facebook-240.svg"
+                  class="landing-image20"
+                />
+              </a>
+            </div>
+            <div class="landing-feature-card06">
+              <a
+                href="https://shp.ee/ru94bez"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="landing-link3"
+              >
+                <img
+                  alt="image"
+                  src="public/playground_assets/icons8-shopee-144.svg"
+                  class="landing-image21"
+                />
+              </a>
+            </div>
+            <div class="landing-feature-card07">
+              <a
+                href="https://tokopedia.link/h6mz9nGn0yb"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="landing-link4"
+              >
+                <img
+                  alt="image"
+                  src="public/playground_assets/pngwing.com%20%5B2%5D-200h.png"
+                  class="landing-image22"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="landing-container46">
+            <div class="landing-feature-card08">
+              <a
+                href="https://www.instagram.com/sumbermakmur.garden/"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="landing-link5"
+              >
+                <img
+                  alt="image"
+                  src="public/playground_assets/icons8-instagram-240.svg"
+                  class="landing-image23"
+                />
+              </a>
+            </div>
+            <div class="landing-feature-card09">
+              <a
+                href="https://www.facebook.com/profile.php?id=100090434927415"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="landing-link6"
+              >
+                <img
+                  alt="image"
+                  src="public/playground_assets/icons8-facebook-240.svg"
+                  class="landing-image24"
+                />
+              </a>
+            </div>
+            <div class="landing-feature-card10">
+              <a
+                href="https://shp.ee/ru94bez"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="landing-link7"
+              >
+                <img
+                  alt="image"
+                  src="public/playground_assets/icons8-shopee-144.svg"
+                  class="landing-image25"
+                />
+              </a>
+            </div>
+            <div class="landing-feature-card11">
+              <a
+                href="https://tokopedia.link/h6mz9nGn0yb"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="landing-link8"
+              >
+                <img
+                  alt="image"
+                  src="public/playground_assets/pngwing.com%20%5B2%5D-200h.png"
+                  class="landing-image26"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- End Of Social Media Section -->
+        
+        <!-- Our Location Section -->
+        <div class="landing-maps">
+          <h1 class="landing-text08">Lokasi Kami</h1>
+
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d997.2372982566098!2d116.8336413625657!3d-1.195943476574205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1683470455869!5m2!1sid!2sid" width="900" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          
+          <a href="https://goo.gl/maps/jBPJ3woYNUUJ6XKw6" target="_blank" class="landing-button button">Go to maps</a>
+        </div>
+        <!-- End of Our Location Section -->
+
+
+        <!-- Footer Section -->
+        <footer class="landing-footer">
+          <img
+            alt="logo"
+            src="public/playground_assets/logo-removebg-preview-200w.png"
+            class="landing-image27"
+          />
+          <span class="landing-text45">
+            © 2023 KKN C-7 Sumber Makmur, All Rights Reserved.
+          </span>
+        </footer>
+        <!-- End Of Footer Section -->
+      </div>
+    </div>
+    <!-- Javascript Function -->
+    <script
+      data-section-id="header"
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+      
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+      }
+      </script>
+  </body>
+</html>
