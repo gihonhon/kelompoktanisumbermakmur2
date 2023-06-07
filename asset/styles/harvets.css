@@ -46,50 +46,6 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media(max-width: 767px) {
   .navigation-links-nav {
     align-items: flex-start;
@@ -1087,6 +1043,10 @@
   }
 }
 @media(max-width: 479px) {
+  .harvets-container {
+    overflow: hidden;
+    width: 100%;
+  }
   .harvets-header {
     padding: var(--dl-space-space-unit);
   }
@@ -1113,22 +1073,27 @@
     padding-right: 0px;
   }
   .harvets-text03 {
-    font-size: 2rem;
+    margin: 0;
+    padding: var(--dl-space-space-halfunit);
+    font-size: 1.5rem;
   }
   .harvets-gallery {
-    padding-top: var(--dl-space-space-twounits);
+    display: table-column;
+    padding-top: var(--dl-space-space-unit);
     padding-left: var(--dl-space-space-unit);
     padding-right: var(--dl-space-space-unit);
-    padding-bottom: var(--dl-space-space-twounits);
+    padding-bottom: var(--dl-space-space-unit);
   }
   .harvets-image02 {
     height: 10rem;
   }
   .harvets-text04 {
-    font-size: 1.2rem;
-    width: 40%;
+    font-size: 0.8rem;
   }
   .harvets-text05 {
+    font-size: 12px;
+  }
+  .harvets-text06 {
     font-size: 0.8rem;
   }
   .harvets-image03 {
@@ -1138,6 +1103,9 @@
     font-size: 1.2rem;
   }
   .harvets-text08 {
+    font-size: 12px;
+  }
+  .harvets-text09 {
     font-size: 0.8rem;
   }
   .harvets-image04 {
@@ -1147,6 +1115,9 @@
     font-size: 1.2rem;
   }
   .harvets-text11 {
+    font-size: 12px;
+  }
+  .harvets-text12 {
     font-size: 0.8rem;
   }
   .harvets-image05 {
@@ -1156,6 +1127,9 @@
     font-size: 1.2rem;
   }
   .harvets-text14 {
+    font-size: 12px;
+  }
+  .harvets-text15 {
     font-size: 0.8rem;
   }
   .harvets-image06 {
@@ -1165,6 +1139,9 @@
     font-size: 1.2rem;
   }
   .harvets-text17 {
+    font-size: 12px;
+  }
+  .harvets-text18 {
     font-size: 0.8rem;
   }
   .harvets-image07 {
@@ -1174,6 +1151,9 @@
     font-size: 1.2rem;
   }
   .harvets-text20 {
+    font-size: 12px;
+  }
+  .harvets-text21 {
     font-size: 0.8rem;
   }
   .harvets-image08 {
@@ -1183,6 +1163,9 @@
     font-size: 1.2rem;
   }
   .harvets-text23 {
+    font-size: 12px;
+  }
+  .harvets-text24 {
     font-size: 0.8rem;
   }
   .harvets-image09 {
@@ -1192,6 +1175,9 @@
     font-size: 1.2rem;
   }
   .harvets-text26 {
+    font-size: 12px;
+  }
+  .harvets-text27 {
     font-size: 0.8rem;
   }
   .harvets-banner {
@@ -1201,9 +1187,9 @@
     padding-bottom: var(--dl-space-space-twounits);
   }
   .harvets-text28 {
-    font-size: 0.5rem;
+    font-size: 1.5rem;
   }
-  .harvets-container4 {
+  .harvets-container12 {
     padding: var(--dl-space-space-halfunit);
     margin-top: var(--dl-space-space-halfunit);
     margin-bottom: var(--dl-space-space-halfunit);

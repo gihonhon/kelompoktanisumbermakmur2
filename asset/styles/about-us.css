@@ -210,7 +210,7 @@
   flex-direction: column;
   background-size: cover;
   justify-content: center;
-  background-image: url("../backgroundtani.jpg");
+  background-image: url("../background_tani.jpg");
   background-repeat: no-repeat;
   background-position: top;
 }
@@ -766,6 +766,11 @@
   }
 }
 @media(max-width: 479px) {
+  .about-us.container {
+    width: 100%;
+    overflow: hidden;
+  }
+
   .about-us-header {
     padding: var(--dl-space-space-unit);
   }
@@ -798,21 +803,24 @@
     padding-right: 0px;
   }
   .about-us-banner {
-    margin: auto;
-    padding: auto;
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+    padding: 1rem;
   }
   .about-us-text07 {
     font-size: 2rem;
+    margin-bottom: 1rem;
   }
   .about-us-gallery {
     width: 100%;
     padding: var(--dl-space-space-unit);
   }
   .about-us-text26 {
+    margin-top: 1rem;
     font-size: 2rem;
   }
   .about-us-gallery1 {
-    padding-top: var(--dl-space-space-twounits);
+    padding-top: var(--dl-space-space-units);
     padding-left: var(--dl-space-space-unit);
     padding-right: var(--dl-space-space-unit);
     padding-bottom: var(--dl-space-space-twounits);
@@ -844,4 +852,5 @@
     margin-right: 0px;
     margin-bottom: var(--dl-space-space-unit);
   }
+
 }
